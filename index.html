@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fake Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <header>
+            <h1 class="h1">Fake Store Products</h1>
+        </header>
+        <section>
+            <input type="text" id="input" class="input" placeholder="Mahsulot qidirish 🔎">
+            <button class="btn" id="btn">Dark mode</button>
+            <select id="categoryFilter">
+                <option value="all">All</option>
+                <option value="electronics">Electronics</option>
+                <option value="jewelery">Jewelry</option>
+                <option value="men's clothing">Men's Clothing</option>
+                <option value="women's clothing">Women's Clothing</option>
+            </select>
+            <select id="price-filter">
+                <option value="all">Barcha narxlar</option>
+                <option value="0-20">$0 - $20</option>
+                <option value="20-50">$20 - $50</option>
+                <option value="50-100">$50 - $100</option>
+                <option value="100+">$100+</option>
+            </select>
+        </section>
+        
+        <div id="loader" class="loader">
+
+        </div>
+        <main id="productContainer" class="product-container">
+
+        </main>
+        <div id="cart" class="cart">
+            <h2>Shopping Cart</h2>
+            <ul id="cartItems">
+
+            </ul>
+            <p id="totalPrice">Total: $0.00</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
